@@ -1,19 +1,23 @@
-let mySprite = sprites.create(img`
-    . . . . . . . c d . . . . . . . 
-    . . . . . . . c d . . . . . . . 
-    . . . . . . . c d . . . . . . . 
-    . . . . . . . c b . . . . . . . 
-    . . . . . . . f f . . . . . . . 
-    . . . . . . . c 3 . . . . . . . 
-    . . . . . . . f f . . . . . . . 
-    . . . . . . . e 3 . . . . . . . 
-    . . . . . . e e 1 e . . . . . . 
-    . . . . . . e 3 1 e . . . . . . 
-    . . . . . c c c e e e . . . . . 
-    . . . . e e 3 3 3 1 e e . . . . 
-    . . c f f f c c e e f f e e . . 
-    . c c c c e e 3 3 3 3 1 3 e e . 
-    c c c c c c e e 3 3 3 1 3 3 e e 
-    c c c c c c e e 3 3 3 3 1 3 e e 
+let spaceship = sprites.create(img`
+    . . . . . . . b 3 . . . . . . . 
+    . . . . . . . b 3 . . . . . . . 
+    . . . . . . . b 1 . . . . . . . 
+    . . . . . . . b d . . . . . . . 
+    . . . . . . . b d . . . . . . . 
+    . . . . . . . b 3 . . . . . . . 
+    . . . . . . . b d . . . . . . . 
+    . . . . . . . 3 3 . . . . . . . 
+    . . . . . . 3 1 1 3 . . . . . . 
+    . . . . . . 3 3 1 3 . . . . . . 
+    . . . . . b b b 1 1 3 . . . . . 
+    . . . . 3 1 3 3 3 1 1 3 . . . . 
+    . . d b b b d d 1 1 b b 3 3 . . 
+    . d d d d 1 1 3 3 3 3 1 3 1 3 . 
+    d d d d d d 1 1 3 3 3 1 3 3 1 3 
+    d d d d d d 1 1 3 3 3 3 1 3 1 1 
     `, SpriteKind.Player)
-mySprite.setPosition(80, 97)
+spaceship.setPosition(80, 97)
+spaceship.setFlag(SpriteFlag.StayInScreen, true)
+game.onUpdate(function () {
+    spaceship.x += controller.dx()
+})
