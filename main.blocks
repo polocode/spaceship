@@ -1,0 +1,18 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="~/P-QqP?J4j2h_hS@VPS">mySprite</variable><variable type="KIND_SpriteKind" id="x2!HOcL~T.CQS*Cxf!V{">Player</variable><variable type="KIND_SpriteKind" id="w~AwI|Y05MKaDg}I1-|:">Projectile</variable><variable type="KIND_SpriteKind" id="DY$|M@7TnpnHO/TfD_Hc">Food</variable><variable type="KIND_SpriteKind" id="cV|![H`1X7Yj{7D^~Eb]">Enemy</variable></variables><block type="pxt-on-start" id="T*N|W+H=a|YV?-uf$#Z`" x="0" y="0"><statement name="HANDLER"><block type="variables_set" id=":*)lJ_c[8c%Bm3i.Ysu7"><field name="VAR" id="~/P-QqP?J4j2h_hS@VPS">mySprite</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="MXWFoSKCja#2xsE?=/i)"><value name="img"><shadow type="screen_image_picker" id="+!@_$|FivxV%]1MkoY[b"><field name="img">img`
+. . . . . . . c d . . . . . . . 
+. . . . . . . c d . . . . . . . 
+. . . . . . . c d . . . . . . . 
+. . . . . . . c b . . . . . . . 
+. . . . . . . f f . . . . . . . 
+. . . . . . . c 3 . . . . . . . 
+. . . . . . . f f . . . . . . . 
+. . . . . . . e 3 . . . . . . . 
+. . . . . . e e 1 e . . . . . . 
+. . . . . . e 3 1 e . . . . . . 
+. . . . . c c c e e e . . . . . 
+. . . . e e 3 3 3 1 e e . . . . 
+. . c f f f c c e e f f e e . . 
+. c c c c e e 3 3 3 3 1 3 e e . 
+c c c c c c e e 3 3 3 1 3 3 e e 
+c c c c c c e e 3 3 3 3 1 3 e e 
+`</field></shadow></value><value name="kind"><shadow type="spritekind" id="q(P[JxVdV#w0TlTyvDli"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="spritesetpos" id="r?6IP{G{+7i5A}7%pt$#"><value name="sprite"><block type="variables_get" id="88I,@I*krX^#=Sf!N]lI"><field name="VAR" id="~/P-QqP?J4j2h_hS@VPS">mySprite</field></block></value><value name="x"><shadow type="positionPicker" id="cap@MQ${Ywo!9u:4_}_P"><field name="index">80</field></shadow></value><value name="y"><shadow type="positionPicker" id="R.sk..Fd9E7V0$C(j2K|"><field name="index">97</field></shadow></value></block></next></block></statement></block></xml>
